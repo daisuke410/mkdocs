@@ -1,0 +1,6 @@
+site_name: G検定対策サイト
+extra:
+  search:
+    language: 'ja'
+# Copyright
+copyright: 'Copyright © 2010 - 2020 - Classmethod, Inc.'

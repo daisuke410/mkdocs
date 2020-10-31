@@ -1,0 +1,20 @@
+version: 0.1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - python3 -m pip install --upgrade pip
+        - python3 -m pip install pymdown-extensions
+        - python3 -m pip install plantuml-markdown
+        - python3 -m pip install mkdocs
+        - python3 -m pip install mkdocs
+        - python3 -m pip install pymdown-extensions
+    build:
+      commands:
+        - mkdocs build
+  artifacts:
+    baseDirectory: site
+    files:
+      - '**/*'
+  cache:
+    paths: []
